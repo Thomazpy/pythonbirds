@@ -18,6 +18,11 @@ if __name__ == '__main__':
     print(tamy.idade)
     for filho in tamy.filhos:
         print(filho.nome)
+        tamy.sobrenome = 'Cardoso'
+        del tamy.filhos
+        print(tamy.__dict__)
+        print(thomaz.__dict__)
+
 
 
 
